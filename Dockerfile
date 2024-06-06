@@ -21,3 +21,4 @@ RUN python -m pip install -r requirements.txt \
     && python -m pip install git+https://github.com/aqlaboratory/openfold \
     && python -m pip install .
 
+ENTRYPOINT ["/bin/bash"]
