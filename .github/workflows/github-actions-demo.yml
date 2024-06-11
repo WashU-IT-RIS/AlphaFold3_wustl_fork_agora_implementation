@@ -2,8 +2,11 @@
   name: Image push test
   run-name: ${{ github.actor }} is testing out building/pushing an image
   
-  on: [push]
-  
+  on:
+    push:
+      branches: [ "main" ]
+    pull_request:
+      branches: [ "main" ]
   
   jobs:
     build:
