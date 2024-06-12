@@ -18,6 +18,6 @@ WORKDIR /app/alphafold
 ## Install the AlphaFold3 package + requirements
 COPY . .
 RUN python -m pip install -r requirements.txt \
-    && python -m pip install git+https://github.com/aqlaboratory/openfold \
+    && python -m pip install git+https://github.com/aqlaboratory/openfold@f6c875b3c8e3e873a932cbe3b31f94ae011f6fd4 \
     && python -m pip install .
 
